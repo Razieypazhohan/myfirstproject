@@ -1,0 +1,407 @@
+.main{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+   
+}
+
+/* header .......*/
+
+.head-top{
+    width: 100%;
+    height: 140px;    
+}
+.head-top>*{
+    height: 100%;
+}
+.head-top>figure{
+    width: 60%;
+    align-items: center;
+    padding-left: 80px;
+    margin-left: 20px;
+}
+.head-top>figure>img{
+    height: 62%;
+}
+
+.head-top>div{
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.head-top>div>form{
+    height: 40%;
+    width: 60%;
+    border: none;
+    overflow:hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 1px;
+}
+
+.head-top>div>form>input[type=search]{
+    width: 100%;
+    height: 70%;
+    outline: none;
+    padding-left: 10px;
+    border: none;
+    border-radius: 2px;
+    border: 1px solid rgb(240, 238, 238);
+}
+.head-top>div>form>button{
+    width: 20%;
+    height: 70%;
+    outline: none;
+    padding-left: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(153, 152, 152);;
+}
+
+.head-top>div>section>a{
+    padding: 15px;
+    font-family: Arial, Helvetica,'Segoe UI', sans-serif;
+    font-size: 12px;
+    color: rgb(144, 141, 141);
+}
+.head-top>div>section>a:hover{
+    color: rgb(93, 91, 91);
+}
+.head-top>section>button{
+    height: 50%;
+    width: 60%;
+    background-color:rgb(227, 63, 63);
+    border: none;
+    cursor: pointer;
+}
+.head-top>section{
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 60px;
+}
+
+
+/* Menu.... Nav.... */
+
+
+.main>nav{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(97, 89, 89);
+    display: flex;
+}
+.main>nav>ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+.main>nav>ul>li{
+   border: 0.5px solid white;
+}
+.main>nav>ul>li>a{
+    height:100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    text-transform: capitalize;
+    position: relative;
+    font-size: 20px;
+    font-family:  Roboto, sans-serif;
+    font-weight: 600;
+    line-height: 26px;
+    color: white;
+ }
+ .main>nav>ul>li:hover>a{
+   background-color: rgb(226, 55, 55);
+ }
+ .main>nav>ul>li>div{
+   position: absolute;
+   width: 80%;
+   margin-top: 1px;
+   height: 200px;
+   background-color: rgb(97, 89, 89);
+   opacity: 0;
+   visibility: hidden;
+   transition: 0.4s;
+   color: rgb(238, 238, 238);
+ }
+ .main>nav>ul>li:hover>div{
+    opacity: 1;
+    visibility: visible;
+  }
+  .main>nav>ul>li>div>div>ul{
+    padding: 15px;
+    
+   }
+  .main>nav>ul>li>div>div>ul>li{
+   line-height: 1;
+   
+  }
+
+  .main>nav>ul>li>div>div>ul>h4{
+    padding: 8px;
+    font-size: 15px;
+    transition: color 0.3s ease;
+    display: flex;
+
+  }
+  .main>nav>ul>li>div>div>ul>li>a{
+    display: flex;
+    font-size: 15px;
+    justify-content: flex-start;
+    padding: 10px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+
+
+  .main>nav>ul>li>div>div>ul>li:hover>a{
+    color:rgb(226, 55, 55);
+  }
+
+
+
+  /* slide...... */
+
+
+  .main>figure{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin: 45px 70px 30px 70px;
+  }
+  .main>figure>img{
+      width: 100%;
+      height: 100%;
+  }
+
+
+  /* section....... */
+
+
+  .main>section{
+      width: 100%;
+      margin: 0px 70px 45px 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+  .main>section>figure{
+      width: 100%;
+      height: 100%;
+  }
+  .main>section>figure>img{
+    width: 100%;
+    height: 100%;
+}
+
+.image-left{
+    margin-right: 15px;
+    position: relative;
+}
+.image-right{
+    margin-left: 15px;
+    position: relative;
+}
+
+/* trick........... */
+
+.image-left:after{
+    content: "";
+    background-color: rgb(253, 253, 253);
+    position: absolute;
+    width: 75%;
+    height: 35%;
+    left: 0;
+    z-index: 1;
+    opacity: 0.8;
+    bottom: 10%;
+}
+.image-left::before{
+    content: "SHOP DRIP";
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    left: 0;
+    bottom: 10%;
+}
+.image-left:hover::before{
+    color: rgb(105, 104, 104);
+    cursor: pointer;
+}
+
+.image-right:after{
+    content: "";
+    background-color: rgb(253, 253, 253);
+    position: absolute;
+    width: 75%;
+    height: 35%;
+    left: 0;
+    z-index: 1;
+    opacity: 0.8;
+    bottom: 10%;
+}
+.image-right:before{
+    content: "shop spresso";
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    left: 0;
+    bottom: 10%;
+    text-transform: uppercase;
+}
+.image-right:hover::before{
+    color: rgb(105, 104, 104);
+    cursor: pointer;
+}
+
+
+/* Article ...... */ 
+
+
+.main>article{
+    width: 90%;
+    height: 400px;
+    margin-left: 55px;
+   
+}
+.main>article>div{
+    margin: 10px;
+    width: 100%;
+    height: 90%;
+}
+.main>article>div>figure{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.main>article>div>figure>img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+}
+.main>article>div>figure>figcaption{
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    font-weight: 500;
+    font-size: 30px;
+}
+.main>article>div>figure>span{
+    position: absolute;
+    bottom: 32%;
+    left: 10%;
+    font-size: 16px;
+    color: rgb(102, 100, 100);
+}
+.main>article>div>figure>button{
+    position: absolute;
+    background-color: rgb(233, 70, 70);
+    color: rgb(248, 248, 248);
+    padding: 5px;
+    bottom: 10%;
+    left: 10%;
+    border: none;
+    font-size: 20px;
+    width: 60%;height: 16%;
+}
+.main>article>div>figure>button:hover{
+   background-color: rgb(184, 182, 182);
+}
+
+
+
+/* Footer....... */
+
+
+
+
+ .main>footer{
+    width: 90%;
+    height: 400px;
+    margin-left: 55px;
+   
+}
+.main>footer>div{
+    margin: 10px;
+    width: 100%;
+    height: 90%;
+}
+.main>footer>div>figure{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+}
+.main>footer>div>figure>img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+}
+.main>footer>div>figure>figcaption{
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    font-weight: 500;
+    font-size: 30px;
+}
+.main>footer>div>figure>button{
+    position: absolute;
+    background-color: rgb(233, 70, 70);
+    color: rgb(248, 248, 248);
+    padding: 5px;
+    bottom: 10%;
+    left: 10%;
+    border: none;
+    font-size: 20px;
+    width: 60%;height: 16%;
+}
+.main>footer>div>figure>span{
+    position: absolute;
+    bottom: 32%;
+    left: 10%;
+    font-size: 16px;
+    color: rgb(102, 100, 100);
+}
+.main>footer>div>figure>button:hover{
+    background-color: rgb(184, 182, 182);
+ }
+ 
+
+
+
+
+ 
+
+
